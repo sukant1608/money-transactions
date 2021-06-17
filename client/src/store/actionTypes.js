@@ -1,0 +1,7 @@
+export const ADD_ERROR = "ADD_ERROR";
+export const REMOVE_ERROR = "REMOVE_ERROR";
+
+export const SET_CURRENT_USER = "SET_CURRENT_USER";
+
+export const SET_CONTACTS = "SET_CONTACTS";
+export const SET_CURRENT_CONTACT = "SET_CURRENT_CONTACT";

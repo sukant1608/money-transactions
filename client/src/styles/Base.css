@@ -1,0 +1,108 @@
+:root {
+  --danger: #ff8a80;
+  --light: #afeeee;
+  --medium: #40e0d0;
+  --dark: #48d1cc;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.btn-add {
+  border-radius: 100%;
+  color: var(--dark);
+  background: none;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin: 5px;
+  border: 2px solid aqua;
+  font-size: large;
+  cursor: pointer;
+}
+.btn-add:hover {
+  background-color: aqua;
+  color: black;
+}
+.btn-sub {
+  border-radius: 100%;
+  color: var(--danger);
+  background: none;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin: 5px;
+  border: 2px solid var(--danger);
+  font-size: large;
+  cursor: pointer;
+}
+.btn-sub:hover {
+  background-color: var(--danger);
+  color: black;
+}
+
+.transaction {
+  width: 100%;
+  border: 5px solid var(--dark);
+  margin: 20px 0;
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--medium);
+}
+.transaction:hover {
+  background-color: var(--medium);
+  color: black;
+}
+
+.debit-transaction {
+  width: 100%;
+  border: 5px solid var(--danger);
+  margin: 20px 0;
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--danger);
+}
+.debit-transaction:hover {
+  background-color: var(--danger);
+  color: black;
+}
+
+.light-btn {
+  padding: 10px;
+  border: 2px black solid;
+  border-radius: 3px;
+  background-color: aqua;
+  cursor: pointer;
+}
+.light-btn:hover {
+  border: 2px aqua solid;
+  background-color: black;
+  color: aqua;
+}
+.dark-btn {
+  padding: 10px;
+  font-weight: 900;
+  border: 2px aqua solid;
+  border-radius: 3px;
+  background-color: rgb(22, 20, 20);
+  color: aqua;
+  cursor: pointer;
+}
+.dark-btn:hover {
+  border: 2px black solid;
+  background-color: aqua;
+  color: black;
+}
+.danger-btn {
+  padding: 10px;
+  font-weight: 900;
+  border: 2px var(--danger) solid;
+  border-radius: 3px;
+  background-color: rgb(22, 20, 20);
+  color: var(--danger);
+  cursor: pointer;
+}
+.danger-btn:hover {
+  border: 2px black solid;
+  background-color: var(--danger);
+  color: black;
+}

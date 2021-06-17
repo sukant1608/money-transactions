@@ -1,0 +1,286 @@
+body {
+  background-color: #141114;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.sign {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 50%;
+  top: 50%;
+  text-transform: uppercase;
+  font-size: 6em;
+  color: #afeeee;
+  text-shadow: 0 0 0.6rem #afeeee, 0 0 1.5rem #40e0d0,
+    -0.2rem 0.1rem 1rem #40e0d0, 0.2rem 0.1rem 1rem #40e0d0,
+    0 -0.5rem 2rem #48d1cc, 0 0.5rem 3rem #48d1cc;
+}
+@media screen and (max-width: 600px) {
+  .sign {
+    font-size: 4em;
+  }
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #afeeee;
+    text-shadow: 0 0 0.6rem #afeeee, 0 0 1.5rem #40e0d0,
+      -0.2rem 0.1rem 1rem #40e0d0, 0.2rem 0.1rem 1rem #40e0d0,
+      0 -0.5rem 2rem #48d1cc, 0 0.5rem 3rem #48d1cc;
+  }
+  28%,
+  33% {
+    color: #40e0d0;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #48d1cc;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #00ced1;
+    text-shadow: none;
+  }
+  100% {
+    color: #afeeee;
+    text-shadow: 0 0 0.6rem #afeeee, 0 0 1.5rem #40e0d0,
+      -0.2rem 0.1rem 1rem #40e0d0, 0.2rem 0.1rem 1rem #40e0d0,
+      0 -0.5rem 2rem #48d1cc, 0 0.5rem 3rem #48d1cc;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.home-box {
+  width: 100%;
+  position: absolute;
+  top: 80vh;
+  color: white;
+}
+.home-box-child {
+  width: 90%;
+  padding: 20px;
+}
+@media screen and (min-width: 600px) {
+  .home-box {
+    display: flex;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  #home-img {
+    margin-top: 250px;
+  }
+}
+.home-box h1 {
+  color: #40e0d0;
+}
+.home-box-child p {
+  line-height: 50px;
+  font-size: x-large;
+}
+.container {
+  transition: 0.5s;
+}
+
+.container#blur.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+
+#login-form {
+  visibility: hidden;
+  transition: 0.5s;
+  opacity: 0;
+  box-shadow: 0 5px 30px aqua;
+  background-color: rgb(22, 20, 20);
+  color: aqua;
+  width: 50%;
+  padding: 20px;
+  margin: auto;
+  margin-top: 10%;
+  border-radius: 10px;
+  border: 2px aqua solid;
+}
+#login-form.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.login-input {
+  padding: 10px;
+  color: aqua;
+  background-color: rgb(22, 20, 20);
+  border: 2px aqua solid;
+  border-radius: 5px;
+  width: 50%;
+}
+
+#sign-form {
+  visibility: hidden;
+  transition: 0.5s;
+  opacity: 0;
+  box-shadow: 0 5px 30px aqua;
+  background-color: rgb(22, 20, 20);
+  color: aqua;
+  width: 50%;
+  padding: 20px;
+  margin: auto;
+  margin-top: -30%;
+  border-radius: 10px;
+  border: 2px aqua solid;
+}
+#sign-form.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}

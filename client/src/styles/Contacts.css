@@ -1,0 +1,13 @@
+.contact-box {
+  margin: 0 0 10px 20px;
+  width: 20%;
+  border: 5px solid var(--dark);
+  border-radius: 10px;
+  padding: 20px;
+}
+@media screen and (max-width: 600px) {
+  .contact-box {
+    width: 90%;
+    margin-left: 10px;
+  }
+}
